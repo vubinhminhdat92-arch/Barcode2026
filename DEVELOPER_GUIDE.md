@@ -33,5 +33,20 @@ Phiên bản: 1.0.0 (Web Edition)
 - Hỗ trợ thêm nhiều định dạng mã vạch khác (QR Code, EAN-8...).
 - Thêm tính năng chọn ảnh nền cho tem nhãn.
 
+## 6. Cách tạo file .exe (Dành cho Windows)
+Để đóng gói ứng dụng này thành một file `.exe` chạy độc lập, bạn hãy làm theo các bước sau trên máy tính của mình:
+
+1. **Chuẩn bị:** Cài đặt các thư viện đóng gói (chạy lệnh này trong terminal):
+   ```bash
+   npm install --save-dev electron electron-builder
+   ```
+2. **Xây dựng file EXE:** Chạy lệnh đóng gói:
+   ```bash
+   npm run build:exe
+   ```
+3. **Kết quả:** Sau khi chạy xong, một thư mục mới tên là `dist_electron` sẽ xuất hiện. 
+   - Bên trong đó, bạn sẽ tìm thấy file **`Barcode Studio Ultimate Setup.exe`** hoặc bản **Portable**. 
+   - Bạn có thể gửi file này cho bất kỳ ai để họ chạy trực tiếp mà không cần cài đặt gì thêm.
+
 ---
 *Tài liệu này được tạo tự động để hỗ trợ bảo trì và nâng cấp dự án.*
